@@ -1,6 +1,6 @@
 ---
 layout: default.hbs
-title: "Hello World POST"
+title: <%= index.title %>
 ---
 !-- === Arrows === -->
 <div id="arrows">
@@ -12,20 +12,21 @@ title: "Hello World POST"
 
 
 <!-- === MAIN Background === -->
-<div class="slide story" id="slide-1" data-slide="1">
+<div class="slide story" id="slide-1" data-slide="1"
+  style="background-image: url('{{assets}}/images/{{index.slide1.background_image}}');">
     <div class="container">
         <div id="home-row-1" class="row clearfix">
             <div class="col-12">
-                <h1 class="font-semibold">MUNTER <span class="font-thin">DESIGN</span></h1>
-                <h4 class="font-thin">We are an <span class="font-semibold">independent interactive agency</span> based in London.</h4>
+                <h1 class="font-semibold">{{index.slide1.mainheading.part1}}<span class="font-thin">{{index.slide1.mainheading.part2}}</span></h1>
+                <h4 class="font-thin">{{index.slide1.description.part1}}<span class="font-semibold">{{index.slide1.description.part2}}</span>{{index.slide1.description.part3}}</h4>
                 <br>
                 <br>
             </div><!-- /col-12 -->
         </div><!-- /row -->
         <div id="home-row-2" class="row clearfix">
-            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="{{assets}}/images/s02.png"></div><span>PROFESSIONAL</span></div>
-            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="{{assets}}/images/s01.png"></div><span>FRIENDLY</span></div>
-            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="{{assets}}/images/s03.png"></div><span>SUITABLE</span></div>
+            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="{{index.slide1.keyword1.onclickslide}}"><img src="{{assets}}/images/{{index.slide1.keyword1.image}}"></div><span>{{index.slide1.keyword1.text}}</span></div>
+            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="{{index.slide1.keyword2.onclickslide}}"><img src="{{assets}}/images/{{index.slide1.keyword2.image}}"></div><span>{{index.slide1.keyword2.text}}</span></div>
+            <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="{{index.slide1.keyword3.onclickslide}}"><img src="{{assets}}/images/{{index.slide1.keyword3.image}}"></div><span>{{index.slide1.keyword3.text}}</span></div>
         </div><!-- /row -->
     </div><!-- /container -->
 </div><!-- /slide1 -->
@@ -34,34 +35,34 @@ title: "Hello World POST"
 <div class="slide story" id="slide-2" data-slide="2">
     <div class="container">
         <div class="row title-row">
-            <div class="col-12 font-thin">Contrary to popular belief, <span class="font-semibold">Lorem Ipsum</span> is not simply random text.</div>
+            <div class="col-12 font-thin">{{index.slide2.statement1.part1}}<span class="font-semibold">{{index.slide2.statement1.part2}}</span>{{index.slide2.statement1.part3}}</div>
         </div><!-- /row -->
         <div class="row line-row">
             <div class="hr">&nbsp;</div>
         </div><!-- /row -->
         <div class="row subtitle-row">
-            <div class="col-12 font-thin">This is what <span class="font-semibold">we do best</span></div>
+            <div class="col-12 font-thin">{{index.slide2.statement2.part1}}<span class="font-semibold">{{index.slide2.statement2.part2}}</span></div>
         </div><!-- /row -->
         <div class="row content-row">
             <div class="col-12 col-lg-3 col-sm-6">
-                <p><i class="icon icon-eye-open"></i></p>
-                <h2 class="font-thin">Visual <span class="font-semibold">Identity</span></h2>
-                <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <p><i class="icon {{index.slide2.item1.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide2.item1.heading.part1}}<span class="font-semibold">{{index.slide2.item1.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide2.item1.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-lg-3 col-sm-6">
-                <p><i class="icon icon-laptop"></i></p>
-                <h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
-                <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <p><i class="icon {{index.slide2.item2.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide2.item2.heading.part1}}<span class="font-semibold">{{index.slide2.item2.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide2.item2.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-lg-3 col-sm-6">
-                <p><i class="icon icon-tablet"></i></p>
-                <h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
-                <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <p><i class="icon {{index.slide2.item3.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide2.item3.heading.part1}}<span class="font-semibold">{{index.slide2.item3.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide2.item3.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-lg-3 col-sm-6">
-                <p><i class="icon icon-pencil"></i></p>
-                <h2 class="font-semibold">Development</h2>
-                <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <p><i class="icon {{index.slide2.item4.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide2.item4.heading.part1}}<span class="font-semibold">{{index.slide2.item4.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide2.item4.description}}</h4>
             </div><!-- /col12 -->
         </div><!-- /row -->
     </div><!-- /container -->
@@ -70,18 +71,18 @@ title: "Hello World POST"
 <!-- === SLide 3 - Portfolio -->
 <div class="slide story" id="slide-3" data-slide="3">
     <div class="row">
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p01-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p01-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p02-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p02-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p09-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p09-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p010-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p10-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p05-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p05-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p06-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p06-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p07-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p07-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p08-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p08-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p03-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p03-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p04-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p04-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p11-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p11-small.jpg" alt=""></a></div>
-        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/p12-small.jpg" alt=""></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image01.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image01.name}}-small.jpg" alt="{{index.slide3.image01.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image02.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image02.name}}-small.jpg" alt="{{index.slide3.image02.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image03.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image03.name}}-small.jpg" alt="{{index.slide3.image03.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image04.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image04.name}}-small.jpg" alt="{{index.slide3.image04.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image05.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image05.name}}-small.jpg" alt="{{index.slide3.image05.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image06.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image06.name}}-small.jpg" alt="{{index.slide3.image06.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image07.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image07.name}}-small.jpg" alt="{{index.slide3.image07.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image08.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image08.name}}-small.jpg" alt="{{index.slide3.image08.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image09.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image09.name}}-small.jpg" alt="{{index.slide3.image09.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image10.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image10.name}}-small.jpg" alt="{{index.slide3.image10.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image11.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image11.name}}-small.jpg" alt="{{index.slide3.image11.alt}}"></a></div>
+        <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="{{assets}}/images/portfolio/{{index.slide3.image12.name}}-large.jpg"><img class="thumb" src="{{assets}}/images/portfolio/{{index.slide3.image12.name}}-small.jpg" alt="{{index.slide3.image12.alt}}"></a></div>
     </div><!-- /row -->
 </div><!-- /slide3 -->
 
@@ -89,42 +90,42 @@ title: "Hello World POST"
 <div class="slide story" id="slide-4" data-slide="4">
     <div class="container">
         <div class="row title-row">
-            <div class="col-12 font-thin">See us <span class="font-semibold">at work</span></div>
+            <div class="col-12 font-thin">{{index.slide4.statement1.part1}}<span class="font-semibold">{{index.slide4.statement1.part2}}</span></div>
         </div><!-- /row -->
         <div class="row line-row">
             <div class="hr">&nbsp;</div>
         </div><!-- /row -->
         <div class="row subtitle-row">
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
-            <div class="col-12 col-sm-10 font-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+            <div class="col-12 col-sm-10 font-light">{{index.slide4.statement2}}</div>
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->
         <div class="row content-row">
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
             <div class="col-12 col-sm-2">
-                <p><i class="icon icon-bolt"></i></p>
-                <h2 class="font-thin">Listening to<br><span class="font-semibold" >your needs</span></h2>
-                <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <p><i class="icon {{index.slide4.item1.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide4.item1.heading.part1}}<br><span class="font-semibold" >{{index.slide4.item1.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide4.item1.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2">
-                <p><i class="icon icon-cog"></i></p>
-                <h2 class="font-thin">Project<br><span class="font-semibold">discovery</span></h2>
-                <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <p><i class="icon {{index.slide4.item2.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide4.item2.heading.part1}}<br><span class="font-semibold">{{index.slide4.item2.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide4.item2.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2">
-                <p><i class="icon icon-cloud"></i></p>
-                <h2 class="font-thin">Storming<br><span class="font-semibold">our brains</span></h2>
-                <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <p><i class="icon {{index.slide4.item3.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide4.item3.heading.part1}}<br><span class="font-semibold">{{index.slide4.item3.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide4.item3.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2">
-                <p><i class="icon icon-map-marker"></i></p>
-                <h2 class="font-thin">Getting<br><span class="font-semibold">there</span></h2>
-                <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <p><i class="icon {{index.slide4.item4.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide4.item4.heading.part1}}<br><span class="font-semibold">{{index.slide4.item4.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide4.item4.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2">
-                <p><i class="icon icon-gift"></i></p>
-                <h2 class="font-thin">Delivering<br><span class="font-semibold">the product</span></h2>
-                <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <p><i class="icon {{index.slide4.item5.icon}}"></i></p>
+                <h2 class="font-thin">{{index.slide4.item5.heading.part1}}<br><span class="font-semibold">{{index.slide4.item5.heading.part2}}</span></h2>
+                <h4 class="font-thin">{{index.slide4.item5.description}}</h4>
             </div><!-- /col12 -->
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->
@@ -135,23 +136,23 @@ title: "Hello World POST"
 <div class="slide story" id="slide-5" data-slide="5">
     <div class="container">
         <div class="row title-row">
-            <div class="col-12 font-thin"><span class="font-semibold">Clients</span> we’ve worked with</div>
+            <div class="col-12 font-thin">{{index.slide5.statement1.part1}}<span class="font-semibold">{{index.slide5.statement1.part2}}</span>{{index.slide5.statement1.part3}}</div>
         </div><!-- /row -->
         <div class="row line-row">
             <div class="hr">&nbsp;</div>
         </div><!-- /row -->
         <div class="row subtitle-row">
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
-            <div class="col-12 col-sm-10 font-light">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/><br/> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
+            <div class="col-12 col-sm-10 font-light">{{index.slide5.statement2}}<br/><br/>{{index.slide5.statement3}}</div>
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->
         <div class="row content-row">
             <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-            <div class="col-12 col-sm-2"><img src="{{assets}}/images/client01.png" alt=""></div>
-            <div class="col-12 col-sm-2"><img src="{{assets}}/images/client02.png" alt=""></div>
-            <div class="col-12 col-sm-2"><img src="{{assets}}/images/client03.png" alt=""></div>
-            <div class="col-12 col-sm-2"><img src="{{assets}}/images/client04.png" alt=""></div>
-            <div class="col-12 col-sm-2"><img src="{{assets}}/images/client05.png" alt=""></div>
+            <div class="col-12 col-sm-2"><img src="{{assets}}/images/{{index.slide5.client01.image}}" alt="{{index.slide5.client01.alt}}"></div>
+            <div class="col-12 col-sm-2"><img src="{{assets}}/images/{{index.slide5.client02.image}}" alt="{{index.slide5.client02.alt}}"></div>
+            <div class="col-12 col-sm-2"><img src="{{assets}}/images/{{index.slide5.client03.image}}" alt="{{index.slide5.client03.alt}}"></div>
+            <div class="col-12 col-sm-2"><img src="{{assets}}/images/{{index.slide5.client04.image}}" alt="{{index.slide5.client04.alt}}"></div>
+            <div class="col-12 col-sm-2"><img src="{{assets}}/images/{{index.slide5.client05.image}}" alt="{{index.slide5.client05.alt}}"></div>
             <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->
     </div><!-- /container -->
@@ -161,37 +162,37 @@ title: "Hello World POST"
 <div class="slide story" id="slide-6" data-slide="6">
     <div class="container">
         <div class="row title-row">
-            <div class="col-12 font-light">Leave us a <span class="font-semibold">message</span></div>
+            <div class="col-12 font-light">{{index.slide6.statement1.part1}}<span class="font-semibold">{{index.slide6.statement1.part2}}</span></div>
         </div><!-- /row -->
         <div class="row line-row">
             <div class="hr">&nbsp;</div>
         </div><!-- /row -->
         <div class="row subtitle-row">
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
-            <div class="col-12 col-sm-10 font-light">You can find us literally anywhere, just push a button and we’re there</div>
+            <div class="col-12 col-sm-10 font-light">{{index.slide6.statement2}}</div>
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->
         <div id="contact-row-4" class="row">
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
             <div class="col-12 col-sm-2 with-hover-text">
-                <p><a target="_blank" href="#"><i class="icon icon-phone"></i></a></p>
-                <span class="hover-text font-light ">+44 4839-4343</span></a>
+                <p><a target="_blank" href="{{index.slide6.phone.link}}"><i class="icon {{index.slide6.phone.icon}}"></i></a></p>
+                <span class="hover-text font-light ">{{index.slide6.phone.text}}</span></a>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2 with-hover-text">
-                <p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
-                <span class="hover-text font-light ">munter@blacktie.co</span></a>
+                <p><a target="_blank" href="{{index.slide6.email.link}}"><i class="icon {{index.slide6.email.icon}}"></i></a></p>
+                <span class="hover-text font-light ">{{index.slide6.email.text}}</span></a>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2 with-hover-text">
-                <p><a target="_blank" href="#"><i class="icon icon-home"></i></a></p>
-                <span class="hover-text font-light ">London, England<br>zip code 98443</span></a>
+                <p><a target="_blank" href="{{index.slide6.address.link}}"><i class="icon {{index.slide6.address.icon}}"></i></a></p>
+                <span class="hover-text font-light ">{{index.slide6.address.line1}}<br/>{{index.slide6.address.line2}}<br/>{{index.slide6.address.line3}}</span></a>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2 with-hover-text">
-                <p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
-                <span class="hover-text font-light ">facebook/blacktie_co</span></a>
+                <p><a target="_blank" href="{{index.slide6.facebook.link}}"><i class="icon {{index.slide6.facebook.icon}}"></i></a></p>
+                <span class="hover-text font-light ">{{index.slide6.facebook.text}}</span></a>
             </div><!-- /col12 -->
             <div class="col-12 col-sm-2 with-hover-text">
-                <p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
-                <span class="hover-text font-light ">@BlackTie_co</span></a>
+                <p><a target="_blank" href="{{index.slide6.twitter.link}}"><i class="icon {{index.slide6.twitter.icon}}"></i></a></p>
+                <span class="hover-text font-light ">{{index.slide6.twitter.text}}</span></a>
             </div><!-- /col12 -->
             <div class="col-sm-1 hidden-sm">&nbsp;</div>
         </div><!-- /row -->

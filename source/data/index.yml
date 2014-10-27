@@ -1,2 +1,181 @@
-introduction: "Hello World"
-description: "Lorem ipsum dolor sit amet."
+title: "MUNTER - Free Bootstrap 3 One Page Theme"
+
+slide1:
+  background_image: "bg1.jpg"
+  mainheading:
+    part1: "MUNTER"
+    part2: "DESIGN"
+  description:
+    part1: "We are an "
+    part2: "independent interactive agency"
+    part3: " based in London."
+  keyword1:
+    text: "PROFESSIONAL"
+    image: "s02.png"
+    onclickslide: "3"
+  keyword2:
+    text: "FRIENDLY"
+    image: "s01.png"
+    onclickslide: "4"
+  keyword3:
+    text: "SUITABLE"
+    image: "s03.png"
+    onclickslide: "5"
+
+slide2:
+  statement1:
+    part1: "Contrary to popular belief, "
+    part2: "Lorem Ipsum"
+    part3: " is not simply random text."
+  statement2:
+    part1: "This is what "
+    part2: "we do best"
+  item1:
+    icon: "icon-eye-open"
+    heading:
+      part1: "Visual "
+      part2: "Identity"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  item2:
+    icon: "icon-laptop"
+    heading:
+      part1: "Web "
+      part2: "Design"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  item3:
+    icon: "icon-tablet"
+    heading:
+      part1: "Mobile "
+      part2: "Apps"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  item4:
+    icon: "icon-pencil"
+    heading:
+      part1: ""
+      part2: "Development"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+slide3:
+  image01:
+    name: "p01"
+    alt: ""
+  image02:
+    name: "p02"
+    alt: ""
+  image03:
+    name: "p03"
+    alt: ""
+  image04:
+    name: "p04"
+    alt: ""
+  image05:
+    name: "p05"
+    alt: ""
+  image06:
+    name: "p06"
+    alt: ""
+  image07:
+    name: "p07"
+    alt: ""
+  image08:
+    name: "p08"
+    alt: ""
+  image09:
+    name: "p09"
+    alt: ""
+  image10:
+    name: "p10"
+    alt: ""
+  image11:
+    name: "p11"
+    alt: ""
+  image12:
+    name: "p12"
+    alt: ""
+  
+slide4:
+  statement1:
+    part1: "See us "
+    part2: "at work"
+  statement2: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+  item1:
+    icon: "icon-bolt"
+    heading:
+      part1: "Listening to"
+      part2: "your needs"
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+  item2:
+    icon: "icon-cog"
+    heading:
+      part1: "Project"
+      part2: "discovery"
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+  item3:
+    icon: "icon-cloud"
+    heading:
+      part1: "Storming"
+      part2: "our brains"
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+  item4:
+    icon: "icon-map-marker"
+    heading:
+      part1: "Getting"
+      part2: "there"
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+  item5:
+    icon: "icon-gift"
+    heading:
+      part1: "Delivering"
+      part2: "the product"
+    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    
+slide5:
+  statement1:
+    part1: ""
+    part2: "Clients "
+    part3: "we've worked with"
+  statement2: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+  statement3: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero."
+  client01:
+    image: "client01.png"
+    alt: ""
+  client02:
+    image: "client02.png"
+    alt: ""
+  client03:
+    image: "client03.png"
+    alt: ""
+  client04:
+    image: "client04.png"
+    alt: ""
+  client05:
+    image: "client05.png"
+    alt: ""
+  
+slide6:
+  statement1:
+    part1: "Leave us a "
+    part2: "message"
+  statement2: "You can find us literally anywhere, just push a button and we're there"
+  phone:
+    icon: "icon-phone"
+    text: "+44 4839-4343"
+    link: ""
+  email:
+    icon: "icon-envelope"
+    text: "munter@blacktie.co"
+    link: "mailto:munter@blacktie.co"
+  address:
+    icon: "icon-home"
+    line1: "London, England"
+    line2: "zip code 98443"
+    line3: ""
+    link: "https://maps.google.com"
+  facebook: 
+    icon: "icon-facebook"
+    text: "facebook/blacktie_co"
+    link: "https://facebook.com/blacktie_co"
+  twitter:
+    icon: "icon-twitter"
+    text: "@BlackTie_co"
+    link: "https://twitter.com/BlackTie_co"
