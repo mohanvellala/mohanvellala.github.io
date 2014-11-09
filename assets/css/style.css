@@ -96,7 +96,9 @@ body {
 .special-active-menu {
   z-index: 10;
 }
-#special-active-menu-1,
+#special-active-menu-1 {
+  background-color: #4e4e4e !important;
+}
 #special-active-menu-6 {
   background-color: #4e4e4e !important;
 }
@@ -178,7 +180,6 @@ body {
   text-align: center;
 }
 #slide-1 {
-  background-image: url('../images/bg1.jpg');
   color: #ffffff;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
