@@ -118,7 +118,7 @@ module.exports = function (grunt) {
             options: {
                 base: '<%= config.dist %>',
                 branch: 'master',
-                repo: 'https://github.com/mohanvellala/mohanvellala.github.io'
+                repo: 'git@github.com:mohanvellala/mohanvellala.github.io'
             },
             src: ['**']
         }
